@@ -3,10 +3,10 @@ var app = express();
 
 
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "../public"));
+//app.use(express.static(__dirname + "../public"));
 
 app.get("/", function(req, res) {
-    res.render("test");
+    res.send("<h1>Test for Trigo Bakery</h1>");
 });
 
 app.get("/breads", function(req, res){
