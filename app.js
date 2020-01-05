@@ -21,6 +21,4 @@ app.get("/cakes", function(req, res){
     res.render("cakes");
 })
 
-app.listen(3000, function() {
-    console.log("Started Trigo Bakery");
-});
+app.listen(process.env.PORT || 5000);
