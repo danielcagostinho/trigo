@@ -1,0 +1,84 @@
+<%- include("partials/header") %>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+  </head>
+  <body>
+    <!-- Main section -->
+    <section class="container-fluid text-center mx-0 px-0">
+        <!-- Header Row -->
+        <div class="row align-items-center mx-0 px-0" id="header-row">
+          <!-- Mobile Header -->
+          <div class="col-12 d-lg-none mx-0 px-0">
+            <img src="./imgs/logo-alt.jpg" class="img-fluid" id="logo-alt" />
+          </div>
+          <!--  -->
+  
+          <div class="col-lg-6 d-none d-lg-block mx-0 px-0">
+            <img src="/assets/imgs/logo.jpg" class="img-fluid" id="logo" />
+          </div>
+          <div class="col-lg-6 d-none d-lg-block px-0 mx-0">
+            <img src="./imgs/cornbread.jpg" class="img-fluid" />
+          </div>
+        </div>
+  
+        <!-- Product Row -->
+        <div class="row align-items-center" id="products-row">
+          <div class="col-lg-6 order-2 order-lg-1 mx-0 px-0">
+            <img src="./imgs/IMG_6491.jpg" class="img-fluid" />
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 mx-0 px-2 px-lg-0 py-5 py-lg-0 product-link-text"
+          >
+            <h2>PRODUCTS</h2>
+            <p>Browse by category:</p>
+            <p><a href="./breads.html" class="product-link">Breads</a></p>
+            <p><a href="./pastries.html" class="product-link">Pastries</a></p>
+            <p><a href="./cakes.html" class="product-link">Cakes</a></p>
+          </div>
+        </div>
+  
+        <!-- Contact Row -->
+        <div class="row align-items-center text-center" id="contact-row">
+          <div class="col-lg-6 mx-0 px-4 px-lg-0 py-5 py-lg-0">
+            <h2>CONTACT</h2>
+            <p class="lead">(905) 896-7245</p>
+            <p class="lead">
+              289 Dundas St. E #8 | Mississauga, ON | L5A 1X1
+            </p>
+            <div class="map">
+              <iframe
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJncRCmQFHK4gRGzsBpoT5mW8&key=AIzaSyC0iarw2tL_5dhFdhdMb87BO97VkxePfe8"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 mx-0 px-0">
+            <img src="./imgs/croissant.jpg" class="img-fluid" />
+          </div>
+        </div>
+  
+        <!-- Hours of Operation Row -->
+        <div class="row align-items-center" id="hours-row">
+          <div class="col-lg-6 order-2 order-lg-1 px-0 mx-0">
+            <img src="./imgs/baguette.jpg" class="img-fluid" />
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 mx-0 px-2 px-lg-0 py-5 py-lg-0">
+            <h2>HOURS OF OPERATION</h2>
+            <table class="hours-text">
+              <tr>
+                <td>Monday - Friday</td>
+                <td>6:00AM - 7:00PM</td>
+              </tr>
+              <tr>
+                <td>Saturday & Sunday</td>
+                <td>6:00AM - 5:00PM</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+<%- include("partials/footer") %>

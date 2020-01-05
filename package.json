@@ -1,0 +1,23 @@
+{
+  "name": "trigo",
+  "version": "1.0.0",
+  "description": "Trigo Bakery Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcagostinho/trigo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielcagostinho/trigo/issues"
+  },
+  "homepage": "https://github.com/danielcagostinho/trigo#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
