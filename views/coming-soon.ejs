@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trigo Bakery</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"  rel="stylesheet" />
+    </head>
+    <style>
+        body {
+            background: url("black.png");
+            font-family: Nunito, sans-serif;
+            color: rgb(128, 108, 0);
+        }
+        .logo {
+            width: 400px;
+            left:50%;
+            top:50%;
+            margin: 200px 0 0 -200px;
+            position: relative;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .gradient-animation {
+            -webkit-animation: color-change 6s infinite;
+            -moz-animation: color-change 6s infinite;
+            -o-animation: color-change 6s infinite;
+            -ms-animation: color-change 6s infinite;
+            animation: color-change 6s infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+
+        @keyframes color-change {
+            0% { color: #fff; }
+            50% { color: rgb(128, 108, 0); }
+            100% { color: #fff; }
+        }
+        
+        
+    </style>
+    <body>
+        <div class="container">
+            <img src="/logo.jpg" class="logo">
+            <h5 class="text-center gradient-animation">COMING SOON...</h5>
+        </div>
+    </body>
+</html>

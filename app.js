@@ -3,10 +3,11 @@ var app = express();
 
 
 app.set("view engine", "ejs");
-//app.use(express.static(__dirname + "../public"));
+app.use(express.static("public"));
+
 
 app.get("/", function(req, res) {
-    res.send("<h1>Test for Trigo Bakery</h1>");
+    res.render("coming-soon");
 });
 
 app.get("/breads", function(req, res){
@@ -21,4 +22,6 @@ app.get("/cakes", function(req, res){
     res.render("cakes");
 })
 
-app.listen(process.env.PORT || 5000);
+app.listen((process.env.PORT || 5000), function(){
+    console.log("Trigo Bakery is running on port 5000");
+});
