@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 
 app.get("/", function(req, res) {
-    res.render("coming-soon");
+    res.render("index");
 });
 
 app.get("/breads", function(req, res){
