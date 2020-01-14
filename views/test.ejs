@@ -2,18 +2,19 @@
 <%- include("partials/nav") %>
 <div class="main">
     <div class="row">
-        <div class="col-6 tile" id="logo-tile">
+        <div class="col-12 col-md-6 tile d-none d-md-flex">
             <img src="logo.jpg" alt="Logo" id="logo-img">
         </div>
-        <div class="col-6 tile">
+        <div class="col-12 col-md-6 tile d-none d-md-flex">
             <img src="assets/imgs/cornbread.JPG" alt="header-img" class="tile-img">
         </div>
-    </div>
-    <div class="row">
-        <div class="col-6 tile">
+        <div class="col-12 tile d-md-none">
+            <img src="logo-alt.jpg" alt="Logo" id="logo-alt-img">
+        </div>
+        <div class="col-12 col-md-6 tile">
             <img src="assets/imgs/IMG_6491.JPG" alt="products-img" class="tile-img">
         </div>
-        <div class="col-6 tile" id="products-tile">
+        <div class="col-12 col-md-6 tile" id="products-tile">
             <div class="tile-list-container">
                 <h1 class="text-center tile-heading">Products</h1>
                 <ul class="tile-list">
@@ -23,9 +24,10 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-6 tile" id="contact-tile">
+        <div class="col-12 col-md-6 tile order-md-2">
+            <img src="assets/imgs/croissant.jpg" alt="contact-img" class="tile-img">
+        </div>
+        <div class="col-12 col-md-6 tile order-md-1" id="contact-tile">
             <div class="tile-list-container">
                 <h1 class="text-center tile-heading">Contact</h1>
                 <ul class="tile-list">
@@ -33,27 +35,20 @@
                     <li class="text-center">289 Dundas St. E #8</li>
                     <li class="text-center">Mississauga ON | L5A 1X1</li>
                 </ul>
-                <!-- <div class="map">
-                    <iframe
-                      width="600"
-                      height="450"
+                <div class="map">
+                    <iframe id="map-iframe"
                       frameborder="0"
                       style="border:0"
                       src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJncRCmQFHK4gRGzsBpoT5mW8&key=AIzaSyC0iarw2tL_5dhFdhdMb87BO97VkxePfe8"
                       allowfullscreen
                     ></iframe>
-                </div> -->
+                </div>
             </div>
         </div>
-        <div class="col-6 tile">
-            <img src="assets/imgs/croissant.jpg" alt="contact-img" class="tile-img">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6 tile">
+        <div class="col-12 col-md-6 tile order-md-3">
             <img src="assets/imgs/baguette.jpg" alt="hours-img" class="tile-img">
         </div>
-        <div class="col-6 tile" id="hours-tile">
+        <div class="col-12 col-md-6 tile order-md-4">
             <div class="tile-list-container text-center">
                 <h1 class="tile-heading">Hours of Operation</h1>
                 <div class="row">

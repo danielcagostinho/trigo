@@ -1,12 +1,12 @@
 # Trigo Bakery Website
 # 
-# ################## 14/01/2020 Release Notes ################## 
+# ################## 14/01/2020 Release Notes 1.1 ################## 
+# Added Mobile Support
+# Added Map to Contact Tile
+# Moved CSS to external file
+# 
+# ################## 14/01/2020 Release Notes 1.0 ################## 
 # Landing HTML page ready 
 # No Mobile Support Yet
 # No Map Included Yet
 # Anchor Links do not link to other pages yet
-# TODO: - Modularize code and separate CSS and JS from HTML file
-#       - Verify that the map works
-#       - Mobile Support
-#       - Gallery Page
-#       - Social Media Content
