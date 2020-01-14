@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Trigo Bakery</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet"
+        href="../../bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css"/>
+    
+        <!-- Google Font -->
+        <link
+          href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <!-- NAV -->
+        <nav id="main-navbar" class="navbar navbar-dark navbar-right navbar-expand-md py-0 fixed-top">
+            <a href="#" class="navbar-brand">Trigo</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-links" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav-links" class="collapse navbar-collapse">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="#logo-tile" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products-tile" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-tile" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hours-tile" class="nav-link">Hours</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="row">
+                <div class="col-6 tile" id="logo-tile">
+                    <img src="logo.jpg" alt="Logo" id="logo-img">
+                </div>
+                <div class="col-6 tile">
+                    <img src="assets/imgs/cornbread.JPG" alt="header-img" class="tile-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 tile">
+                    <img src="assets/imgs/IMG_6491.JPG" alt="products-img" class="tile-img">
+                </div>
+                <div class="col-6 tile" id="products-tile">
+                    <div class="tile-list-container">
+                        <h1 class="text-center tile-heading">Products</h1>
+                        <ul class="tile-list">
+                            <li class="text-center"><a href="#">Breads</a href="#"></li class="text-center">
+                            <li class="text-center"><a href="#">Pastries</a></li>
+                            <li class="text-center"><a href="#">Cakes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 tile" id="contact-tile">
+                    <div class="tile-list-container">
+                        <h1 class="text-center tile-heading">Contact</h1>
+                        <ul class="tile-list">
+                            <li class="text-center">(905) 896-7245</li class="text-center">
+                            <li class="text-center">289 Dundas St. E #8</li>
+                            <li class="text-center">Mississauga ON | L5A 1X1</li>
+                        </ul>
+                        <!-- <div class="map">
+                            <iframe
+                              width="600"
+                              height="450"
+                              frameborder="0"
+                              style="border:0"
+                              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJncRCmQFHK4gRGzsBpoT5mW8&key=AIzaSyC0iarw2tL_5dhFdhdMb87BO97VkxePfe8"
+                              allowfullscreen
+                            ></iframe>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-6 tile">
+                    <img src="assets/imgs/croissant.jpg" alt="contact-img" class="tile-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 tile">
+                    <img src="assets/imgs/baguette.jpg" alt="hours-img" class="tile-img">
+                </div>
+                <div class="col-6 tile" id="hours-tile">
+                    <div class="tile-list-container text-center">
+                        <h1 class="tile-heading">Hours of Operation</h1>
+                        <div class="row">
+                            <div class="col-6"><p>Monday - Friday</p></div>
+                            <div class="col-6"><p>6:00AM - 7:00PM</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><p>Saturday - Sunday</p></div>
+                            <div class="col-6"><p>6:00AM - 5:00PM</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <script>
+            $(function() {
+                $(document).scroll(function() {
+                var $nav = $("#main-navbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+    </body>
+</html>

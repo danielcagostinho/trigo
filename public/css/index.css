@@ -1,110 +1,88 @@
+.debug-border {
+    border: red solid 2px;
+}
+
 body {
-    background: url("/assets/imgs/black.png");
-    font-family: Nunito, sans-serif;
-    color: white;
-  }
-  
-  #main-navbar {
-    font-size: 1.5rem;
+    background: url("../black.png");
     font-weight: 100;
-  }
-  #main-navbar .nav-link {
+    font-size: 30px;
     color: white;
-  }
-  #main-navbar .nav-link:hover {
-    color: #aaa;
-  }
-  
-  #main-navbar .navbar-brand {
-    color: white;
-    font-size: 1.5rem;
-  }
-  
-  .navbar.scrolled {
-    background-color: rgb(128, 108, 0);
-    transition: background 600ms;
-  }
-  
-  #logo {
-    width: 80%;
-  }
-  
-  
-  :target:before {
-    content: "";
-    display: block;
-    height: 60px; /* fixed header height*/
-    margin: -60px 0 0; /* negative fixed header height */
-  }
-  
-  h2 {
-    font-weight: 100;
-    font-size: 50px;
-    color: rgb(128, 108, 0);
-  }
-  
-  .product-link-text {
-    font-size: 2em;
-    font-weight: 100;
-  }
-  
-  .hours-text {
-    font-size: 2em;
-    font-weight: 100;
-  }
-  
-  table {
-    margin: 0 auto;
-    width: 40%;
-  }
-  
-  @media (max-width: 1200px) {
-    h2 {
-      font-weight: 100;
-      font-size: 40px;
-      color: rgb(128, 108, 0);
-    }
-  
-    .product-link-text {
-      font-size: 1em;
-    }
-  
-    .hours-text {
-      font-size: 1em;
-    }
-    table {
-      margin: 0 auto;
-      width: 80%;
-    }
-  }
-  
-  .map {
-    position: relative;
-    padding-bottom: 75%;
-    margin: 0 auto;
-    width: 80%;
-    overflow: hidden;
-  }
-  .map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-  }
-  
-  .img-fluid {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .product-link {
-    color: white;
+}
+
+a {
     text-transform: uppercase;
-  }
-  
-  .product-link:hover {
+    color: white;
+}
+
+a:hover {
     text-decoration: none;
     color: rgb(128, 108, 0);
-  }
-  
+}
+
+/* Tile CSS */
+.tile {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.tile-heading {
+    text-transform: uppercase;
+    color: rgb(128,108,0);
+}
+
+/* Nav CSS */
+#main-navbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+#main-navbar .nav-link {
+    color: white;
+}
+#main-navbar .nav-link:hover {
+    color: #aaa;
+}
+
+#main-navbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background-color: rgb(128, 108, 0);
+    transition: background 600ms;
+}
+
+.tile-list-container {
+    margin: 0 100px;
+    width: 100%;
+    align-self: center;
+}
+
+.tile-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.tile-list li {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.tile-list li > a {
+    margin: 10px 0;
+}
+
+#logo-img {
+    width: 60%;
+}

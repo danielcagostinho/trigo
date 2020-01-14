@@ -1,24 +1,71 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Trigo Bakery</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>
-            Test for Trigo Bakery
-        </h1>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<div class="main">
+    <div class="row">
+        <div class="col-6 tile" id="logo-tile">
+            <img src="logo.jpg" alt="Logo" id="logo-img">
+        </div>
+        <div class="col-6 tile">
+            <img src="assets/imgs/cornbread.JPG" alt="header-img" class="tile-img">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 tile">
+            <img src="assets/imgs/IMG_6491.JPG" alt="products-img" class="tile-img">
+        </div>
+        <div class="col-6 tile" id="products-tile">
+            <div class="tile-list-container">
+                <h1 class="text-center tile-heading">Products</h1>
+                <ul class="tile-list">
+                    <li class="text-center"><a href="#">Breads</a href="#"></li class="text-center">
+                    <li class="text-center"><a href="#">Pastries</a></li>
+                    <li class="text-center"><a href="#">Cakes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 tile" id="contact-tile">
+            <div class="tile-list-container">
+                <h1 class="text-center tile-heading">Contact</h1>
+                <ul class="tile-list">
+                    <li class="text-center">(905) 896-7245</li class="text-center">
+                    <li class="text-center">289 Dundas St. E #8</li>
+                    <li class="text-center">Mississauga ON | L5A 1X1</li>
+                </ul>
+                <!-- <div class="map">
+                    <iframe
+                      width="600"
+                      height="450"
+                      frameborder="0"
+                      style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJncRCmQFHK4gRGzsBpoT5mW8&key=AIzaSyC0iarw2tL_5dhFdhdMb87BO97VkxePfe8"
+                      allowfullscreen
+                    ></iframe>
+                </div> -->
+            </div>
+        </div>
+        <div class="col-6 tile">
+            <img src="assets/imgs/croissant.jpg" alt="contact-img" class="tile-img">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 tile">
+            <img src="assets/imgs/baguette.jpg" alt="hours-img" class="tile-img">
+        </div>
+        <div class="col-6 tile" id="hours-tile">
+            <div class="tile-list-container text-center">
+                <h1 class="tile-heading">Hours of Operation</h1>
+                <div class="row">
+                    <div class="col-6"><p>Monday - Friday</p></div>
+                    <div class="col-6"><p>6:00AM - 7:00PM</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><p>Saturday - Sunday</p></div>
+                    <div class="col-6"><p>6:00AM - 5:00PM</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>
