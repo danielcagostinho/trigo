@@ -1,3 +1,116 @@
 <%- include("partials/header") %>
-<h1>This is the pastries page</h1>
+<title>Trigo Bakery - Pastries</title>
+<link rel="stylesheet" href="../css/gallery.css" type="text/css" />
+    </head>
+    <body>
+<%- include("partials/nav") %>
+<div id="main">
+    <div id="header-section">
+        <img src="assets/imgs/pastries/pastries-header.jpg" alt="Logo" id="header-img">
+        <h1 id="header-heading">Pastries</h1>
+    </div>
+    <div id="products">
+        <h2 id="product-header" >Our Pastries</h2>
+        <p id="product-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta dicta error reprehenderit sapiente magnam nobis animi. Dolorem nostrum veritatis recusandae?</p>
+        <div id="product-container">
+            <div class="row">
+                <div class="col-12 col-md-4 tile">
+                    <div class="tile-img-container">
+                        <img src="assets/imgs/pastries/bola-de-berlim.JPG" class="tile-img"/>
+                        <h5 class="price d-none">Price: $0.35</h5>
+                    </div>
+                    <div class="tile-caption-container">
+                        <h4 class="tile-caption">Bola De Berlim</h4>
+                        <p class="d-md-none">Price: $0.35</p>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 tile">
+                    <div class="tile-img-container">
+                        <img src="assets/imgs/pastries/bolo-rei.JPG" class="tile-img"/>
+                        <h5 class="price d-none">Price: $0.35</h5>
+                    </div>
+                    <div class="tile-caption-container">
+                        <h4 class="tile-caption">Bolo Rei</h4>
+                        <p class="d-md-none">Price: $0.35</p>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 tile">
+                    <div class="tile-img-container">
+                        <img src="assets/imgs/pastries/broa-de-pinhao.JPG" class="tile-img"/>
+                        <h5 class="price d-none">Price: $0.35</h5>
+                    </div>
+                    <div class="tile-caption-container">
+                        <h4 class="tile-caption">Broa de Pinhao</h4>
+                        <p class="d-md-none">Price: $0.35</p>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 tile">
+                    <div class="tile-img-container">
+                        <img src="assets/imgs/pastries/cavacas.JPG" class="tile-img"/>
+                        <h5 class="price d-none">Price: $0.35</h5>
+                    </div>
+                    <div class="tile-caption-container">
+                        <h4 class="tile-caption">Cavacas</h4>
+                        <p class="d-md-none">Price: $0.35</p>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 tile">
+                    <div class="tile-img-container">
+                        <img src="assets/imgs/pastries/malassadas.JPG" class="tile-img"/>
+                        <h5 class="price d-none">Price: $0.35</h5>
+                    </div>
+                    <div class="tile-caption-container">
+                        <h4 class="tile-caption">Malassadas</h4>
+                        <p class="d-md-none">Price: $0.35</p>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 tile">
+                    <div class="tile-img-container">
+                        <img src="assets/imgs/pastries/pasteis.JPG" class="tile-img"/>
+                        <h5 class="price d-none">Price: $0.35</h5>
+                    </div>
+                    <div class="tile-caption-container">
+                        <h4 class="tile-caption">Pasteis de Nata</h4>
+                        <p class="d-md-none">Price: $0.35</p>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 tile">
+                    <div class="tile-img-container">
+                        <img src="assets/imgs/pastries/pastries.JPG" class="tile-img"/>
+                        <h5 class="price d-none">Price: $0.35</h5>
+                    </div>
+                    <div class="tile-caption-container">
+                        <h4 class="tile-caption">Assorted Pastries</h4>
+                        <p class="d-md-none">Price: $0.35</p>
+                    </div> 
+                </div>
+            </div> 
+        </div>
+        <div class="footer">
+            <a href="#main" class="footer-heading">Back to top</a>
+        </div>
+    </div>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"
+></script>
+<script>
+    $(function() {
+        $(document).scroll(function() {
+            var $nav = $("#main-navbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            var $navLinks = $(".nav-link");
+            $navLinks.toggleClass("black-link", $(this).scrollTop() > $nav.height());
+        });
+    });
+$(function() {
+    $(".tile").hover(function() {
+        $(this).children().find("img").toggleClass("price-display");
+        $(this).children().find(".price").toggleClass("d-none");
+    });
+
+})
+</script>
 <%- include("partials/footer") %>

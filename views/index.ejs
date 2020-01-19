@@ -1,7 +1,12 @@
 <%- include("partials/header") %>
+<title>Trigo Bakery</title>
+<link rel="stylesheet" href="../css/index.css" type="text/css" />
+    </head>
+    <body>
 <%- include("partials/nav") %>
 <div class="main">
     <div class="row">
+        <!-- HEADER ROW -->
         <div class="col-12 col-md-6 tile d-none d-md-flex">
             <img src="logo.jpg" alt="Logo" id="logo-img">
         </div>
@@ -9,31 +14,72 @@
             <img src="assets/imgs/cornbread.JPG" alt="header-img" class="tile-img">
         </div>
         <div class="col-12 tile d-md-none">
-            <img src="logo-alt.JPG" alt="Logo" id="logo-alt-img">
+            <img src="logo-alt.jpg" alt="Logo" id="logo-alt-img">
         </div>
-        <div class="col-12 col-md-6 tile">
-            <img src="assets/imgs/IMG_6491.JPG" alt="products-img" class="tile-img">
-        </div>
-        <div class="col-12 col-md-6 tile" id="products-tile">
+
+        <!-- PRODUCTS ROW -->
+        <div class="col-12 col-md-6 tile order-md-2" id="products-tile">
             <div class="tile-list-container">
-                <h1 class="text-center tile-heading">Products</h1>
+                <h1 class="tile-heading">Products</h1>
                 <ul class="tile-list">
-                    <li class="text-center"><a href="#">Breads</a href="#"></li class="text-center">
-                    <li class="text-center"><a href="#">Pastries</a></li>
-                    <li class="text-center"><a href="#">Cakes</a></li>
+                    <li><a href="/breads">Breads</a href="#"></li>
+                    <li><a href="/pastries">Pastries</a></li>
+                    <li><a href="/cakes">Cakes</a></li>
                 </ul>
             </div>
+        </div> 
+        <div class="col-12 col-md-6 tile order-md-1">
+            <img src="assets/imgs/IMG_6491.JPG" alt="products-img" class="tile-img">
+        </div>               
+        <!-- SOCIAL MEDIA ROW -->
+        <div class="col-12 col-md-6 tile order-md-3" id="social-media-tile">
+            <div class="tile-list-container social-media">
+                <h1 class="tile-heading">Contact Us</h1>
+                <div class="row">
+                    <div class="col-4 social-media-link-col">
+                        <div class="link-circle">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div> 
+                    </div>
+                    <div class="col-4 social-media-link-col">
+                        <div class="link-circle">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </div> 
+                    </div>
+                    <div class="col-4 social-media-link-col">
+                        <div class="link-circle">
+                            <ion-icon name="mail"></ion-icon>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-6 tile order-md-2">
-            <img src="assets/imgs/croissant.jpg" alt="contact-img" class="tile-img">
+        <div class="col-12 col-md-6 tile order-md-4">
+            <img src="assets/imgs/dough.jpg" alt="social-media-img" class="tile-img">
         </div>
-        <div class="col-12 col-md-6 tile order-md-1" id="contact-tile">
+        <!-- HOURS OF OPERATION ROW -->
+        <div class="col-12 col-md-6 tile order-md-6" id="hours-tile">
             <div class="tile-list-container">
-                <h1 class="text-center tile-heading">Contact</h1>
+                <h1 class="tile-heading">Hours of Operation</h1>
+                <div class="row">
+                    <div class="col-6"><p>Monday - Friday</p></div>
+                    <div class="col-6"><p>6:00AM - 7:00PM</p></div>
+                    <div class="col-6"><p>Saturday - Sunday</p></div>
+                    <div class="col-6"><p>6:00AM - 5:00PM</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 tile order-md-5">
+            <img src="assets/imgs/baguette.jpg" alt="hours-img" class="tile-img">
+        </div>
+        <!-- FIND US ROW -->
+        <div class="col-12 col-md-6 tile order-md-7" id="find-us-tile">
+            <div class="tile-list-container">
+                <h1 class="tile-heading">Where To Find Us</h1>
                 <ul class="tile-list">
-                    <li class="text-center">(905) 896-7245</li class="text-center">
-                    <li class="text-center">289 Dundas St. E #8</li>
-                    <li class="text-center">Mississauga ON | L5A 1X1</li>
+                    <li>(905) 896-7245</li>
+                    <li>289 Dundas St. E #8</li>
+                    <li>Mississauga ON | L5A 1X1</li>
                 </ul>
                 <div class="map">
                     <iframe id="map-iframe"
@@ -45,22 +91,25 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 tile order-md-3">
-            <img src="assets/imgs/baguette.jpg" alt="hours-img" class="tile-img">
-        </div>
-        <div class="col-12 col-md-6 tile order-md-4">
-            <div class="tile-list-container text-center">
-                <h1 class="tile-heading">Hours of Operation</h1>
-                <div class="row">
-                    <div class="col-6"><p>Monday - Friday</p></div>
-                    <div class="col-6"><p>6:00AM - 7:00PM</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-6"><p>Saturday - Sunday</p></div>
-                    <div class="col-6"><p>6:00AM - 5:00PM</p></div>
-                </div>
-            </div>
+        <div class="col-12 col-md-6 tile order-md-8">
+            <img src="assets/imgs/croissant.jpg" alt="find-us-img" class="tile-img">
         </div>
     </div>
 </div>
+<script
+          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"
+></script>
+<script>
+    $(function() {
+        $(document).scroll(function() {
+            var $nav = $("#main-navbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            var $navLinks = $(".nav-link");
+            $navLinks.toggleClass("black-link", $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+
 <%- include("partials/footer") %>
