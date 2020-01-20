@@ -6,8 +6,11 @@
 <%- include("partials/nav") %>
 <div id="main">
     <div id="header-section">
-        <img src="assets/imgs/pastries/pastries-header.jpg" alt="Logo" id="header-img">
-        <h1 id="header-heading">Pastries</h1>
+        <img src="assets/imgs/pastries/pastries-header.jpg" alt="Header image" id="header-img">
+        <div id="header-content" class="text-center">
+            <img src="assets/imgs/logo.jpg" alt="Logo" id="logo">
+            <h1 id="header-heading">Pastries</h1>
+        </div>
     </div>
     <div id="products">
         <h2 id="product-header" >Our Pastries</h2>
@@ -97,14 +100,14 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 crossorigin="anonymous"
 ></script>
 <script>
-    $(function() {
-        $(document).scroll(function() {
-            var $nav = $("#main-navbar");
-            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            var $navLinks = $(".nav-link");
-            $navLinks.toggleClass("black-link", $(this).scrollTop() > $nav.height());
-        });
+$(function() {
+    $(document).scroll(function() {
+        var $nav = $("#main-navbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        var $navLinks = $(".nav-link");
+        $navLinks.toggleClass("black-link", $(this).scrollTop() > $nav.height());
     });
+});
 $(function() {
     $(".tile").hover(function() {
         $(this).children().find("img").toggleClass("price-display");

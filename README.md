@@ -1,5 +1,8 @@
 # Trigo Bakery Website
 
+## 20/01/2020 Release Notes 1.3
+* Added Development Page as a placeholder for pages with incorrect information 
+
 ## 18/01/2020 Release Notes 1.2
 * Added Product Gallery and Social Media Links
 

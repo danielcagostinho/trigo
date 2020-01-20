@@ -17,6 +17,10 @@ body {
     
 }
 
+h2 {
+    font-size: 28px;
+}
+
 #main {
     display: flex;
     flex-direction: column;
@@ -80,22 +84,35 @@ a:hover {
     height: 50vh;
 }
 
-#header-heading {
+#header-content {
     position: absolute;
-    font-size: 50px;
-    text-shadow: 2px 2px 8px black;
     z-index: 2;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 200px;
+    opacity: 85%;
+    margin: 0 auto;
+}
+
+
+#header-heading {
+    font-size: 35px;
+    text-shadow: 2px 2px 8px black;
 }
 
 #products {
     width: 50%;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 #product-container {
     display: flex;
-    
 }
 
 #product-header {
@@ -105,6 +122,7 @@ a:hover {
 
 #product-description {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .tile {
@@ -169,4 +187,17 @@ a:hover {
 
 .footer-heading {
     color: white;
+}
+
+
+@media (min-width: 768px){
+    #logo {
+        width: 500px;
+        margin: 0 auto;
+        opacity: 85%;
+    }
+    #header-heading {
+        font-size: 50px;
+        text-shadow: 2px 2px 8px black;
+    }
 }

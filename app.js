@@ -9,10 +9,6 @@ app.get("/", function(req, res){
     res.render("index");
 });
 
-// app.get("/", function(req, res){
-//     res.render("test");
-// });
-
 app.get("/breads", function(req, res){
     res.render("development");
 });
@@ -23,6 +19,22 @@ app.get("/cakes", function(req, res){
 
 app.get("/pastries", function(req, res){
     res.render("development");
+});
+
+app.get("/test", function(req, res){
+    res.render("test");
+});
+
+app.get("/test-breads", function(req, res){
+    res.render("breads");
+});
+
+app.get("/test-pastries", function(req, res){
+    res.render("pastries");
+});
+
+app.get("/test-cakes", function(req, res){
+    res.render("cakes");
 });
 
 
