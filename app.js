@@ -14,15 +14,15 @@ app.get("/", function(req, res){
 // });
 
 app.get("/breads", function(req, res){
-    res.render("breads");
+    res.render("development");
 });
 
 app.get("/cakes", function(req, res){
-    res.render("cakes");
+    res.render("development");
 });
 
 app.get("/pastries", function(req, res){
-    res.render("pastries");
+    res.render("development");
 });
 
 

@@ -101,6 +101,9 @@ a:hover {
     background-color: rgb(213,175,85);
     transition: background 600ms;
 }
+.navbar-toggler-icon {
+    color: black;
+}
 
 #logo-img {
     width: 60%;
