@@ -10,31 +10,19 @@ app.get("/", function(req, res){
 });
 
 app.get("/breads", function(req, res){
-    res.render("development");
+    res.render("breads");
 });
 
 app.get("/cakes", function(req, res){
-    res.render("development");
+    res.render("cakes");
 });
 
 app.get("/pastries", function(req, res){
-    res.render("development");
+    res.render("pastries");
 });
 
 app.get("/test", function(req, res){
     res.render("test");
-});
-
-app.get("/test-breads", function(req, res){
-    res.render("breads");
-});
-
-app.get("/test-pastries", function(req, res){
-    res.render("pastries");
-});
-
-app.get("/test-cakes", function(req, res){
-    res.render("cakes");
 });
 
 
