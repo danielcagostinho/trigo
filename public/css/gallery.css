@@ -126,7 +126,7 @@ a:hover {
 }
 
 .tile {
-    height: 340px;
+    height: 250px;
     display: flex;
     align-content: stretch;
     flex-direction: column;
@@ -159,7 +159,7 @@ a:hover {
 }
 
 .tile-img-container {
-    height: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
